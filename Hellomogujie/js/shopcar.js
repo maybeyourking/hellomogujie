@@ -1,4 +1,4 @@
-$(window).load(function(){
+$(document).ready(function(){
 	var arr = JSON.parse(getCookie("shoplist"));
 //	console.log(arr)
 	var str="";

@@ -1,7 +1,7 @@
 $(".topnav-ul").find("li").click(function(){
 	$(this).addClass("topon").siblings().removeClass("topon")
 })
-$(window).load(function(){
+$(document).ready(function(){
 	$.ajax({
 		type:"get",
 		url:"js/data-product.json?"+new Date().getTime(),

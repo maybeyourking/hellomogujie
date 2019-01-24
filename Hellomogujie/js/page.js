@@ -40,7 +40,7 @@ $("#kuozhan-zhuti-ul").find("li").click(function(){
 
 
 //请求ajax填数据
-$(window).load(function(){
+$(document).ready(function(){
 	var str = location.href;
 	var btr = str.split("?")[1];
 	var arr = btr.split("&");

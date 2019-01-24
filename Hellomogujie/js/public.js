@@ -80,7 +80,7 @@ window.onload = function(){
 		var h1 = 132;
 		var nav = $("#fixed-nav");
 		if( sTop > h1){
-			nav.slideDown()
+			nav.stop().slideDown()
 		}else{
 			nav.css("display","none")
 		}

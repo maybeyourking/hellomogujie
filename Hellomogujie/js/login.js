@@ -117,24 +117,29 @@ $("#spwd").blur(function(){
 })
 
 $("#loginbtn").click(function(){
-	var str = JSON.parse(getCookie("userinfo"));
-	var uname = str.uname;
-	var upwd = str.upwd;
-	var sname = $("#sname").val();
-	var spwd = $("#spwd").val();
-	var logininyzm = $("#logininyzm").val();
-	if( logininyzm == $("#loginyzm").html().toLowerCase() ){
-		if( sname == uname ){
-			if( spwd == upwd ){
-				alert("登录成功")
-				location.href = "mogushop.html";
+	if( getCookie("userinfo") ){
+		var str = JSON.parse(getCookie("userinfo"));
+		var uname = str.uname;
+		var upwd = str.upwd;
+		var sname = $("#sname").val();
+		var spwd = $("#spwd").val();
+		var logininyzm = $("#logininyzm").val();
+		if( logininyzm == $("#loginyzm").html().toLowerCase() ){
+			if( sname == uname ){
+				if( spwd == upwd ){
+					alert("登录成功")
+					location.href = "mogushop.html";
+				}else{
+					alert("密码错误")
+				}
 			}else{
-				alert("密码错误")
+				alert("用户名有误")
 			}
 		}else{
-			alert("用户名有误")
+			alert("验证码错误")
 		}
 	}else{
-		alert("验证码错误")
+		alert("用户名不存在")
 	}
+	
 })

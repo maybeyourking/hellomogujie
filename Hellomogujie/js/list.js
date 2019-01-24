@@ -13,7 +13,7 @@ $(window).load(function(){
 				var pro = json.product[i];
 //				console.log(pro);
 				str += `<div class="pro-list">
-							<a href="page.html" class="pro-list-img">
+							<a href="page.html?pid=${pro.id}" class="pro-list-img">
 								<img src="img/product/${pro.src}"/>
 							</a>
 							<a href="javascript:;" class="pro-list-title">

@@ -281,7 +281,7 @@ body{
 	border-left: 1px solid #f1f1f1;
 }
 .loginbox{
-	width:130px;
+	width:150px;
 	height: 40px;
 	float: right;
 	line-height: 40px;
@@ -294,6 +294,10 @@ body{
 	overflow: hidden;
 	vertical-align: middle;
 	display: none;
+	cursor: pointer;
+}
+.usershow:hover{
+	color: #ff4466;
 }
 .loginbox img{
 	width: 30px;

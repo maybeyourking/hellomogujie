@@ -2,11 +2,11 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>蘑菇街</title>
+		<title>购物车</title>
 		<link rel="stylesheet" type="text/css" href="css/public.css"/>
 		<link rel="stylesheet" type="text/css" href="iconfont/iconfont.css"/>
 		<link rel="stylesheet" type="text/css" href="css/mogushop.css"/>
-		<link rel="stylesheet" type="text/css" href="css/list.css"/>
+		<link rel="stylesheet" type="text/css" href="css/shopcar.css"/>
 	</head>
 	<body>
 		<!--右侧导航-->
@@ -233,7 +233,7 @@
 						收藏
 					</div>
 					<div class="topsitenavbtn gouwuche">
-						<a target="_blank" href="shopcar.html" class="iconfont icon-gouwuche icon-btn"></a>
+						<a href="shopcar.html" class="iconfont icon-gouwuche icon-btn"></a>
 						购物车
 					</div>
 					<div class="topsitenavbtn xiazaiapp">
@@ -251,122 +251,98 @@
 				</div>
 			</div>
 		</div>
-		<div class="list-main">
-			<div class="list-main-topbox">
-				<div class="list-main-topnav">
-					<ul class="topnav-ul">
-						<li><a href="#">上衣</a></li>
-						<li><a href="#">裙子</a></li>
-						<li><a href="#">裤子</a></li>
-						<li><a href="#">内衣</a></li>
-						<li><a href="#">鞋子</a></li>
-						<li><a href="#">包包</a></li>
-						<li><a href="#">配饰</a></li>
-						<li class="topon"><a href="#">男友</a></li>
-						<li><a href="#">美妆</a></li>
-						<li><a href="#">母婴</a></li>
-						<li><a href="#">家居</a></li>
-						<li><a href="#">百货</a></li>
-						<li><a href="#">食品</a></li>
-						<li><a href="#">家电</a></li>
-						<li><a href="#">运动</a></li>
-					</ul>
+		<div class="shopcar-main">
+			<div class="shop-car">
+				<div class="shopcar-jindu">
+					<div class="pro-bar">
+						<div class="pro-car-on"></div>
+						<i class="pro-bar-i">
+							1
+							<span class="pro-bar-s" style="color: #f46;">购物车</span>
+						</i>
+						<i class="pro-bar-i" style="left: 157px;">
+							2
+							<span class="pro-bar-s">确认订单</span>
+						</i>
+						<i class="pro-bar-i" style="left: 314px;">
+							3
+							<span class="pro-bar-s">支付</span>
+						</i>
+						<i class="pro-bar-i" style="left: 471px;">
+							<img src="img/wancheng.png" width="23" height="23"/>
+							<span class="pro-bar-s">完成</span>
+						</i>
+					</div>
 				</div>
-				<div class="list-main-topcontent">
-					<div class="list-main-topcontent-section">
-						<div class="topcontent-section-list">
-							<dt><a href="#">上衣尖货</a></dt>
-							<dd>
-								<a href="#" class="ddimg">
-									<img src="img/ddimg1.png"/>
-								</a>
-								<ul>
-									<li><a href="#">卫衣</a></li>
-									<li><a href="#">冬上新</a></li>
-									<li><a href="#">背心马甲</a></li>
-									<li><a href="#">衬衫</a></li>
-									<li><a href="#">男袜</a></li>
-									<li><a href="#">风衣</a></li>
-									<li><a href="#">飞行员夹克</a></li>
-									<li><a href="#">牛仔外套</a></li>
-									<li><a href="#">夹克</a></li>
-									<li><a href="#">男士内衣</a></li>
-									<li><a href="#">羽绒服</a></li>
-								</ul>
-							</dd>
-						</div>
-						<div class="topcontent-section-list">
-							<dt><a href="#">至IN鞋履</a></dt>
-							<dd>
-								<a href="#" class="ddimg">
-									<img src="img/ddimg2.jpg"/>
-								</a>
-								<ul>
-									<li><a href="#">运动鞋</a></li>
-									<li><a href="#">休闲鞋</a></li>
-									<li><a href="#">皮鞋</a></li>
-									<li><a href="#">小白鞋</a></li>
-									<li><a href="#">帆布鞋</a></li>
-									<li><a href="#">家居鞋</a></li>
-									<li><a href="#">板鞋</a></li>
-									<li><a href="#">拖鞋</a></li>
-								</ul>
-							</dd>
-						</div>
-						<div class="topcontent-section-list">
-							<dt><a href="#">型男裤装</a></dt>
-							<dd>
-								<a href="#" class="ddimg">
-									<img src="img/ddimg3.png"/>
-								</a>
-								<ul>
-									<li><a href="#">休闲裤</a></li>
-									<li><a href="#">牛仔裤</a></li>
-									<li><a href="#">运动裤</a></li>
-									<li><a href="#">西装裤</a></li>
-									<li><a href="#">阔腿裤</a></li>
-									<li><a href="#">贴身内裤</a></li>
-									<li><a href="#">九分裤</a></li>
-								</ul>
-							</dd>
-						</div>
-						<div class="topcontent-section-list">
-							<dt><a href="#">潮流风格</a></dt>
-							<dd>
-								<a href="#" class="ddimg">
-									<img src="img/ddimg4.jpg"/>
-								</a>
-								<ul>
-									<li><a href="#">情侣装</a></li>
-									<li><a href="#">丹宁风</a></li>
-									<li><a href="#">中国风</a></li>
-									<li><a href="#">最品质</a></li>
-									<li><a href="#">时尚套装</a></li>
-								</ul>
-							</dd>
+				<div class="shop-car-wrap">
+					<ul class="car-wrap-ul">
+						<li><a href="#" style="color:#f57;border-bottom: 3px solid #f57;">全部商品</a></li>
+						<li><a href="#">优惠</a></li>
+						<li><a href="#">库存紧张</a></li>
+					</ul>
+					<div class="car-row">
+						<div class="car-row-header">
+							<ul class="row-header-ul">
+								<li style="width: 7.83%;">
+									<input id="selectA" type="checkbox" style="margin-right: 3px;"/>
+									全选
+								</li>
+								<li style="width: 60.5%;padding-left: 100px;text-align: left;">商品信息</li>
+								<li style="width: 8.3%;">单价(元)</li>
+								<li style="width: 8.75%;">数量</li>
+								<li style="width: 9.167%;">小计(元)</li>
+								<li style="width: 4.167%;">操作</li>
+							</ul>
 						</div>
 					</div>
-					<a href="#" class="list-main-topcontent-right">
-						<img src="img/list-main-topcontent-right.png"/>
-					</a>
-				</div>
-			</div>
-			<div class="list-main-h3">
-				<h3>男友</h3>
-			</div>
-			<div class="product-list" id="product-list">
-				<!--<div class="pro-list">
-					<a href="page.html" class="pro-list-img">
-						<img src="img/product/1.webp"/>
-					</a>
-					<a href="javascript:;" class="pro-list-title">
-						<p class="pro-list-tit">2018冬季纯色毛衣男士韩版高领毛衣加绒加厚保暖针织衫个性线衣打底衫外套潮</p>
-						<div class="pro-list-txt">
-							<b class="pro-list-b">￥88</b>
-							<p class="pro-list-p">￥&nbsp;<span>125.72</span></p>
+					<div class="car-row" id="car-row">
+						<!--<div class="car-list">
+							<ul>
+								<li class="car-list-vm"><input type="checkbox" /></li>
+								<li class="car-list-desc">
+									<a href="#" class="car-list-desc-img">
+										<img src="img/product/1-1-100.jpg"/>
+									</a>
+									<a href="#" class="car-list-desc-t">2018冬季纯色毛衣男士韩版高领毛衣加绒加厚保暖针织衫个性线衣打底衫外套潮 </a>
+								</li>
+								<li class="car-list-sku">
+									<p class="sku-color">颜色:白色</p>
+									<p class="sku-color">尺码：XL</p>
+								</li>
+								<li class="car-list-price">
+									<p class="sku-color" style="font-weight: 700;">88.00</p>
+								</li>
+								<li class="car-list-num">
+									<div class="list-num">
+										<input type="text" class="list-num-inp" value="1"/>
+										<span class="list-num-add"></span>
+										<span class="list-num-reduce"></span>
+									</div>
+								</li>
+								<li class="car-list-total">
+									<p class="car-list-xiaoji">88.00</p>
+								</li>
+								<li class="car-list-del">
+									<a href="#" style="color: #333;">删除</a>
+								</li>
+							</ul>
+						</div>-->
+					</div>
+					<div class="car-row-jiesuan">
+						<div class="car-row-jiesuan-left">
+							<input type="checkbox" class="jiesuan-left-all" id="selectAll"/>全选
 						</div>
-					</a>
-				</div>-->
+						<a href="javascript:;" class="topay" id="paygo"></a>
+						<div class="zongji">
+							￥0.00
+						</div>
+						<div class="car-row-jiesuan-right">
+							共有
+							<span style="color: #ff5777;">0</span>
+							件商品，总计
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="box-bottom">
@@ -543,7 +519,7 @@
 						收藏
 					</div>
 					<div class="topsitenavbtn gouwuche">
-						<a target="_blank" href="shopcar.html" class="iconfont icon-gouwuche icon-btn"></a>
+						<a href="shopcar.html" class="iconfont icon-gouwuche icon-btn"></a>
 						购物车
 					</div>
 					<div class="topsitenavbtn xiazaiapp">
@@ -568,4 +544,4 @@
 <script src="js/public.js"></script>
 <script src="js/mogushop.js"></script>
 <script src="js/cookie.js"></script>
-<script src="js/list.js"></script>
+<script src="js/shopcar.js"></script>

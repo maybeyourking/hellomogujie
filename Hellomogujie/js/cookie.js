@@ -1,12 +1,17 @@
 //设置cookie
 function setCookie(key,value,day){
-	if(day){//如果生存周期存在
-		var now = new Date;
-		now.setDate(now.getDate() + day );
-		document.cookie = `${key}=${value};expries=${now}`;
-	}else{
-		document.cookie = `${key}=${value}`;
-	}
+//	if(day){//如果生存周期存在
+//		var now = new Date();
+//		now.setDate(now.getDate() + day );
+//		document.cookie = `${key}=${value};expries=${now}`;
+//	}else{
+//		document.cookie = `${key}=${value}`;
+//	}
+	var d = new Date();
+	d.setTime(d.getTime() + (day * 24 * 60 * 60 * 1000));
+    var expires = "expires=" + d.toUTCString();
+    document.cookie = key + "=" + value + "; " + expires;
+//	document.cookie=key+"="+value + ";expires="+now;
 }
 
 //获取cookie
